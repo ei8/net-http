@@ -1,19 +1,20 @@
-﻿using System.Text.Json;
+﻿using ei8.Net.Http.Notifications.Interface;
+using System.Text.Json;
 using System.Threading.Tasks;
 using WebPush;
 
 namespace ei8.Net.Http.Notifications
 {
-    public class PushNotificationService : IPushNotificationService
+    public class WebPushNotificationService : IPushNotificationService<WebPushNotificationPayload, WebPushReceiver>
     {
         private readonly VapidDetails vapidDetails;
 
-        public PushNotificationService(PushNotificationSettings settings)
+        public WebPushNotificationService(PushNotificationSettings settings)
         {
             this.vapidDetails = new VapidDetails(settings.PushOwner, settings.PushPublicKey, settings.PushPrivateKey);
         }
 
-        public async Task SendAsync(PushNotificationPayload payload, WebPushReceiver subscription)
+        public async Task SendAsync(WebPushNotificationPayload payload, WebPushReceiver subscription)
         {
             var pushSubscription = new PushSubscription(subscription.Endpoint, subscription.P256DH, subscription.Auth);
             var jsonPayload = JsonSerializer.Serialize(payload, Constants.CamelCaseSerialization);

@@ -1,6 +1,8 @@
-﻿namespace ei8.Net.Http.Notifications
+﻿using ei8.Net.Http.Notifications.Interface;
+
+namespace ei8.Net.Http.Notifications
 {
-    public class WebPushReceiver
+    public class WebPushReceiver : INotificationReceiver
     {
         public string Endpoint { get; set; }
         public string P256DH { get; set; }
