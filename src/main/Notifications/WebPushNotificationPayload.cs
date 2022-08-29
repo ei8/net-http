@@ -1,9 +1,10 @@
-﻿using System;
+﻿using ei8.Net.Http.Notifications.Interface;
+using System;
 using System.Collections.Generic;
 
 namespace ei8.Net.Http.Notifications
 {
-    public class PushNotificationPayload
+    public class WebPushNotificationPayload : INotificationPayload
     {
         public string Title { get; set; }
 
