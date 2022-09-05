@@ -6,13 +6,13 @@
 	  <AssemblyName>ei8.Net.$(MSBuildProjectName)</AssemblyName>
 	  <RootNamespace>ei8.Net.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
 	  <PackageId>ei8.Net.$(MSBuildProjectName)</PackageId>
-	  <PackageVersion>0.1.0</PackageVersion>
+	  <PackageVersion>0.1.1</PackageVersion>
 	  <Authors>Junvic Valdez</Authors>
 	  <Description>Net Http</Description>
 	  <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
 	  <PackageReleaseNotes>Initial commit.</PackageReleaseNotes>
 	  <PackageTags>net http</PackageTags>
-	  <Version>0.1.0</Version>
+	  <Version>0.1.1</Version>
 	  <PackageLicenseUrl>https://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
 	  <PackageProjectUrl>https://github.com/ei8/net-http</PackageProjectUrl>
 	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
