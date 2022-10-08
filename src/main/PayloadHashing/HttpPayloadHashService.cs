@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using ei8.Net.PayloadHashing;
+using Microsoft.Extensions.Logging;
 using Polly;
 using Polly.Retry;
 using System;

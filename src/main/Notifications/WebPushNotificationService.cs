@@ -1,15 +1,15 @@
-﻿using ei8.Net.Http.Notifications.Interface;
+﻿using ei8.Net.Notifications;
 using System.Text.Json;
 using System.Threading.Tasks;
 using WebPush;
 
 namespace ei8.Net.Http.Notifications
 {
-    public class WebPushNotificationService : IPushNotificationService<WebPushNotificationPayload, WebPushReceiver>
+    public class WebPushNotificationService : INotificationService<WebPushNotificationPayload, WebPushReceiver>
     {
         private readonly VapidDetails vapidDetails;
 
-        public WebPushNotificationService(PushNotificationSettings settings)
+        public WebPushNotificationService(WebPushNotificationSettings settings)
         {
             this.vapidDetails = new VapidDetails(settings.PushOwner, settings.PushPublicKey, settings.PushPrivateKey);
         }

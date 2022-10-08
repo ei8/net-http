@@ -1,4 +1,4 @@
-﻿using ei8.Net.Http.Notifications.Interface;
+﻿using ei8.Net.Notifications;
 using System;
 using System.Collections.Generic;
 

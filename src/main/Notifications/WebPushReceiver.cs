@@ -1,4 +1,4 @@
-﻿using ei8.Net.Http.Notifications.Interface;
+﻿using ei8.Net.Notifications;
 
 namespace ei8.Net.Http.Notifications
 {
